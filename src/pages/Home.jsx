@@ -16,7 +16,7 @@ const [homeProject,setHomeProject] =useState([])
   }, [])
  const getHomeProject =async()=>{
   const result =await homeProjectAPI()
-  console.log(result);
+  // console.log(result);
   setHomeProject(result.data)
  }  
  useEffect(()=>{
