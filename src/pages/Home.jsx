@@ -54,7 +54,7 @@ const [homeProject,setHomeProject] =useState([])
           <marquee scrollAmount={10} >
             <div className="d-flex mt-5 mb-5">
               {
-                homeProject.length>0?
+                homeProject?.length>0?
                 homeProject.map((item)=>(
                 <div className="" style={{ width: "400px" }}>
                 <ProjectCard project={item} />
